@@ -1,0 +1,11 @@
+.chart-container {
+  position: absolute;
+  width: 850px;
+  left: 60px;
+
+  .coin-chart {
+    background: rgb(235, 235, 235);
+    z-index: 100;
+    position: relative;
+  }
+}

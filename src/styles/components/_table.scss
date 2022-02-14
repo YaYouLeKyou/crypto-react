@@ -1,0 +1,59 @@
+.table-container {
+  text-align: center;
+
+  .table-header,
+  .table-line {
+    display: grid;
+    grid-template-columns: 32px 252px 100px 120px 100px repeat(7, 1fr);
+  }
+  .table-header {
+    input[type="radio"] {
+      display: none;
+
+      &:checked ~ label {
+        font-weight: 900;
+        color: violet;
+      }
+    }
+    label {
+      user-select: none;
+      cursor: pointer;
+      transition: 0.1s;
+
+      &:hover {
+        color: violet;
+      }
+    }
+  }
+  .table-line {
+    height: 40px;
+    align-items: center;
+    border-top: 1px solid rgb(179, 179, 179);
+    position: relative;
+
+    &:hover {
+      background: grey;
+    }
+    .name-pic-container {
+      display: flex;
+      height: 100%;
+
+      .img {
+        display: flex;
+        align-items: center;
+
+        img {
+          object-fit: cover;
+        }
+      }
+      h4 {
+        text-align: left;
+        margin-left: 10px;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+}
